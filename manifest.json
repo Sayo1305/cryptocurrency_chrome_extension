@@ -1,0 +1,28 @@
+{
+    "name": "cryptocurrency_showing extension",
+    "description": "Learning all about Chrome Extensions Manifest Version 3!",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "icons_16.png",
+        "32": "icons_32.png",
+        "128": "icons_128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons_16.png",
+            "32": "icons_32.png",
+            "128": "icons_128.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*/*"
+    ]
+}

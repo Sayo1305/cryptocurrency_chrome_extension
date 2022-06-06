@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background: linear-gradient(to top , #5fc3ff , #9cffc8ae);
+    height: auto;
+    width: 600px;
+    padding: 10px;
+}
+
+.head{
+    width: 400px; text-align: center; color: rgb(255, 255, 255); font-size: 1rem;margin: 0 auto;
+    background: #05386b;
+    border-radius: 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px -2px #09a548ae;
+    margin-bottom: 5px;
+}
+
+.coins_market{
+    display: grid;
+    font-family: 'Inconsolata', monospace;
+    grid-template-rows: repeat(10 , 50px);
+    margin-bottom: 0 !important;
+    flex-wrap: wrap;
+    padding-left: 0 !important;
+    justify-content: center;
+
+}
+.coin{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 90px);
+    grid-auto-rows: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.pics, .pics_search{
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+.coin_name,.coin_name_search{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price , .high_24 , .low_24 , .price_change  , .price_search, .high_24_search , .low_24_search , .price_change_search {
+    font-size: 15px;
+}
+
+.coin div, .get_search_detail div{
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+#search_box{
+    margin-left: 30%;
+    border-radius: 10px;
+    border: solid thin rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.deactive{
+    display: none !important;
+}
+
+.get_search_detail
+{
+    font-family: 'Inconsolata', monospace;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(6, 90px);
+    grid-auto-rows: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.error{
+    margin-left: 40%;
+    font-size: 2rem;
+    color: red;
+    background: rgb(243, 196, 196);
+    border-radius: 10px;
+    padding: 5px;   
+}
